@@ -172,9 +172,9 @@ class Translator
     public function __construct()
     {
         $this->setHttpClient()
-            ->setApiKey(config('google-translate.api_key'))
-            ->setTranslateUrl(config('google-translate.translate_url'))
-            ->setDetectUrl(config('google-translate.detect_url'));
+            ->setApiKey(config('google.translate.api_key'))
+            ->setTranslateUrl(config('google.translate.translate_url'))
+            ->setDetectUrl(config('google.translate.detect_url'));
     }
 
     /**

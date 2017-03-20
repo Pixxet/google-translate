@@ -1,7 +1,7 @@
 Laravel package for Google Translate REST API
 ====================
 
-[![GitHub release](https://img.shields.io/github/release/ddctd143/google-translate.svg)](https://packagist.org/packages/ddctd143/google-translate#1.0.0) [![Downloads Total](https://img.shields.io/packagist/dt/ddctd143/google-translate.svg)](https://packagist.org/packages/ddctd143/google-translate)
+[![GitHub release](https://img.shields.io/github/release/pixxet/google-translate.svg)](https://packagist.org/packages/pixxet/google-translate#1.0.0) [![Downloads Total](https://img.shields.io/packagist/dt/pixxet/google-translate.svg)](https://packagist.org/packages/pixxet/google-translate)
 
 Package allows to work with [Google Translate API](https://cloud.google.com/translate/)
 
@@ -11,14 +11,14 @@ Package can be installed using composer by adding to "require" object
 
 ```
 "require": {
-    "ddctd143/google-translate": "dev-master"
+    "pixxet/google-translate": "dev-master"
 }
 ```
 
 or from console:
 
 ```
-composer require ddctd143/google-translate dev-master
+composer require pixxet/google-translate dev-master
 ```
 
 
@@ -28,8 +28,7 @@ You should publish config file to be able to add your Google API key.
 To publish config you should do:
 
 ```
-php artisan vendor:publish \
---provider="Dedicated\GoogleTranslate\GoogleTranslateProvider" --tag=config
+php artisan vendor:publish --provider="Dedicated\GoogleTranslate\GoogleTranslateProvider"
 ```
 
 After config is published, you will have it in `config\google-translate.php` of your Laravel project directory
@@ -60,10 +59,10 @@ $translator = new Dedicated\GoogleTranslate\Translator;
 
 
 $result = $translator->setSourceLang('en')
-                     ->setTargetLang('ru')
+                     ->setTargetLang('ar')
                      ->translate('Hello World');
                            
-dd($result); // "Привет мир"                           
+dd($result); // "مرحبا بالعالم"                           
 ```
 
 <br>
@@ -81,10 +80,10 @@ This will make 2 requests to google API:
 $translator = new Dedicated\GoogleTranslate\Translator;
 
 
-$result = $translator->setTargetLang('ru')
+$result = $translator->setTargetLang('ar')
                      ->translate('Hello World');
                            
-dd($result); // "Привет мир"                           
+dd($result); // "مربحا بالعالم"                           
 ```
 
 You can also use function to only detect text's source language:

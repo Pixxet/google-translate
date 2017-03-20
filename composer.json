@@ -1,13 +1,13 @@
 {
-    "name": "ddctd143/google-translate",
+    "name": "pixxet/google-translate",
     "description": "Free Laravel package for Paid Google Translate REST API",
     "keywords": ["laravel", "google", "translate", "php"],
     "license": "MIT",
-    "homepage": "http://github.com/ddctd143/google-translate",
+    "homepage": "http://github.com/pixxet/google-translate",
     "authors": [
       {
-        "name": "Arturs Terehovics",
-        "email": "ddctd143@gmail.com"
+        "name": "Omar Sharkeyeh",
+        "email": "omar@pixxet.de"
       }
     ],
     "require": {
