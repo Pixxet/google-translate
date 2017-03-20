@@ -83,7 +83,7 @@ $translator = new Dedicated\GoogleTranslate\Translator;
 $result = $translator->setTargetLang('ar')
                      ->translate('Hello World');
                            
-dd($result); // "مربحا بالعالم"                           
+dd($result); // "مرحبا بالعالم"                           
 ```
 
 You can also use function to only detect text's source language:
