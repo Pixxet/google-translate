@@ -1,5 +1,6 @@
-<?php namespace Dedicated\GoogleTranslate;
+<?php
 
+namespace Dedicated\GoogleTranslate;
 use Illuminate\Support\ServiceProvider;
 
 class GoogleTranslateProvider extends ServiceProvider
@@ -11,7 +12,6 @@ class GoogleTranslateProvider extends ServiceProvider
      */
     public function boot()
     {
-
         $configFile = __DIR__ . '/../config/google.php';
 
         $this->publishes([

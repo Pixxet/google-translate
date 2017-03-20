@@ -1,5 +1,6 @@
-<?php namespace Dedicated\GoogleTranslate;
+<?php
 
+namespace Dedicated\GoogleTranslate;
 use GuzzleHttp\Client;
 
 /**
