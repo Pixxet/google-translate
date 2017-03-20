@@ -26,6 +26,10 @@ class GoogleTranslateProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // $this->app->bind('sitemap', 'Watson\Sitemap\Sitemap');
+
+        $this->mergeConfigFrom(
+            __DIR__ . '/../config/google.php', 'google'
+        );
     }
 }
